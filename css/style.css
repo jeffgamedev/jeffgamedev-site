@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Fjalla+One');
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left:0;
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: auto;
+    overflow-x: hidden;
+    opacity:0;
+    transition: opacity 1s;
+    transition: margin-left .5s;
+}body{  background-image: url("../images/128-190-g-2.jpg");}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-image: url("../images/128-190-g.jpg");
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    text-align: center;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    font-family: 'Cinzel', sans-serif;
+    white-space: nowrap;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f0f0f0;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+font-size: 35px;
+  font-weight: bold;
+    color: #ffffff;
+}
+.sidenav img {
+    padding: 8px 8px 8px 32px;
+    white-space: nowrap;
+}
+
+.txt {
+    cursor:pointer;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 25px;
+    padding: 8px 8px 8px 32px;
+    color: #ffffff;
+    white-space: nowrap;
+    transition: 0.25s
+}
+
+.txt:hover {
+    transform: scale(1.15);
+}
+
+.locator
+{
+    opacity:0;
+    position: absolute;
+    transform:translate3d(0px, -100px, 0px);
+    z-index: 5;
+    transition: 0.5s;
+}
+
+.locator img {
+  width:48px;
+}
+
+.arrow {
+  cursor:pointer;
+  margin-left: -5px;
+  z-index: 4;
+
+  transition: 0.25s
+}
+
+.arrow:hover {
+
+    transform: scale(1.15);
+}
+
+.navsprite {
+  cursor:pointer;
+  white-space: nowrap;
+  text-align: center;
+  max-width:140px;
+  transition: 0.3s;
+  transform:scale(1);
+}
+
+.navsprite:hover {
+  transform: scale(1.15);
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
