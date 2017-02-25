@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel|Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Fjalla+One|Ubuntu');
 
 .overlay {
     height: 100%;
@@ -13,8 +13,8 @@
     opacity:0;
     transition: opacity 1s;
     transition: margin-left .5s;
-}body{  background-image: url("../images/128-190-g-2.jpg");}
-/* The side navigation menu */
+}body{  background-image: url("../images/128-190-g-2.jpg");}.borderwindow2 {  font-family: 'Ubuntu', sans-serif;  color: #f0f0f0;  max-width: 550px;  margin: auto;  border: 20px solid transparent;  padding: 25px;}.borderwindow {
+  font-family: 'Ubuntu', sans-serif;  color: #f0f0f0;  max-width: 550px;  margin: auto;  border: 20px solid transparent;  padding: 25px;  border-image: url("../images/border.png") 30 round;  -webkit-border-image: url("../images/border.png") 30 round; /* Safari 3.1-5 */  -o-border-image: url("../images/border.png") 30 round; /* Opera 11-12.1 */}/* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -52,6 +52,18 @@ font-size: 35px;
     white-space: nowrap;
 }
 
+.maintext {
+
+  text-align: center;
+    margin: auto;
+    cursor:pointer;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 25px;
+    padding: 8px 8px 8px 32px;
+    color: #ffffff;
+    transition: 0.25s
+}
+
 .txt {
     cursor:pointer;
     font-family: 'Fjalla One', sans-serif;
@@ -69,7 +81,7 @@ font-size: 35px;
 .locator
 {
     opacity:0;
-    position: absolute;
+    position: fixed;
     transform:translate3d(0px, -100px, 0px);
     z-index: 5;
     transition: 0.5s;
@@ -83,8 +95,8 @@ font-size: 35px;
   cursor:pointer;
   margin-left: -5px;
   z-index: 4;
-
-  transition: 0.25s
+  transition: 0.25s;
+  position: fixed;
 }
 
 .arrow:hover {
@@ -103,24 +115,6 @@ font-size: 35px;
 
 .navsprite:hover {
   transform: scale(1.15);
-}
-
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
 }
 
 /* Position and style the close button (top right corner) */

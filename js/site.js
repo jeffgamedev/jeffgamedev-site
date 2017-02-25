@@ -1,16 +1,30 @@
 var navSprites = ["chicken.png","sadguy.gif","craftbutton.png","monsterblob.png","anvil.png","commander.png","cappi.png"];
 var lastSpriteIndex = -1;
 var nextSpriteIndexes = [];
+var navOpen = false;
+
+function ArrowPressed()
+{
+    if (navOpen)
+    {
+      CloseNavbar();
+    }
+    else {
+      OpenNavbar();
+    }
+}
 
 function OpenNavbar()
 {
+    navOpen = true;    ChangeNavSprite();
     document.getElementById("navbar").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
     document.getElementById("overlay").style.width = "100%";
-    document.getElementById("overlay").style.opacity = "0.8";    document.getElementById("overlay").style.marginLeft = "250px";    ChangeNavSprite();}
+    document.getElementById("overlay").style.opacity = "0.8";    document.getElementById("overlay").style.marginLeft = "250px";}
 
 function CloseNavbar()
 {
+    navOpen = false;
     document.getElementById("navbar").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
     document.getElementById("overlay").style.width = "0%";
@@ -23,12 +37,15 @@ function CloseNavbar()
 
 function OnMouseOver(targ)
 {
-  var rect = targ.getBoundingClientRect();
-  var x = (rect.right - 20) ;
-  var y = (rect.top) ;
-  var ss = "translate3d(" +x + "px, "+ y+"px, 0px)";
-  document.getElementById("locator").style.opacity="1";
-  document.getElementById("locator").style.transform = ss;
+  if (navOpen)
+  {
+    var rect = targ.getBoundingClientRect();
+    var x = (rect.right - 20) ;
+    var y = (rect.top) ;
+    var ss = "translate3d(" +x + "px, "+ y+"px, 0px)";
+    document.getElementById("locator").style.opacity="1";
+    document.getElementById("locator").style.transform = ss;
+  }
 }
 
 function TouchNavSprite()
@@ -38,6 +55,11 @@ function TouchNavSprite()
 
 function ChangeNavSprite()
 {
+  if (lastSpriteIndex == -1)
+  {
+    lastSpriteIndex = 0;
+    return;
+  }
   if (nextSpriteIndexes.length == 0)
   {
     var indexList = [];
