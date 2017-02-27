@@ -2,6 +2,7 @@ var navSprites = ["chicken.png","sadguy.gif","craftbutton.png","monsterblob.png"
 var lastSpriteIndex = -1;
 var nextSpriteIndexes = [];
 var navOpen = false;
+var navSize = "250px";
 
 function ArrowPressed()
 {
@@ -17,20 +18,27 @@ function ArrowPressed()
 function OpenNavbar()
 {
     navOpen = true;    ChangeNavSprite();
-    document.getElementById("navbar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("navbar").style.width = navSize;
+    if (window.innerWidth >= 800)
+    {
+      document.getElementById("main").style.marginLeft = navSize;
+    }
+    else {
+      document.getElementById("main").style.marginLeft = "0px";
+      document.getElementById("arrow").style.opacity = "0";
+    }
     document.getElementById("overlay").style.width = "100%";
-    document.getElementById("overlay").style.opacity = "0.8";    document.getElementById("overlay").style.marginLeft = "250px";}
+    document.getElementById("overlay").style.opacity = "0.8";    document.getElementById("overlay").style.marginLeft = navSize;}
 
 function CloseNavbar()
 {
     navOpen = false;
+    document.getElementById("arrow").style.opacity = "1";
     document.getElementById("navbar").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
     document.getElementById("overlay").style.width = "0%";
     document.getElementById("overlay").style.opacity = "0.0";
     document.getElementById("overlay").style.marginLeft = "0";
-    document.getElementById("arrow").src="images/arrowsmall.png";
     document.getElementById("locator").style.opacity="0";
     document.getElementById("locator").style.transform = "translate3d(100px,-100px,0px)";
 }

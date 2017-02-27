@@ -14,7 +14,10 @@
     transition: opacity 1s;
     transition: margin-left .5s;
 }body{  background-image: url("../images/128-190-g-2.jpg");}.borderwindow2 {  font-family: 'Ubuntu', sans-serif;  color: #f0f0f0;  max-width: 550px;  margin: auto;  border: 20px solid transparent;  padding: 25px;}.borderwindow {
-  font-family: 'Ubuntu', sans-serif;  color: #f0f0f0;  max-width: 550px;  margin: auto;  border: 20px solid transparent;  padding: 25px;  border-image: url("../images/border.png") 30 round;  -webkit-border-image: url("../images/border.png") 30 round; /* Safari 3.1-5 */  -o-border-image: url("../images/border.png") 30 round; /* Opera 11-12.1 */}/* The side navigation menu */
+  font-family: 'Ubuntu', sans-serif;  font-size:20px;  color: #f0f0f0;  max-width: 580px;  margin: auto;  border: 20px solid transparent;  padding: 25px;
+  border-image: url("../images/border.png") 30 round;  -webkit-border-image: url("../images/border.png") 30 round; /* Safari 3.1-5 */  -o-border-image: url("../images/border.png") 30 round; /* Opera 11-12.1 */}.mainimg {  margin: auto;  width: 80%;  display: block;}.mainimg_small{  margin: auto;  width: 40%;  display: block;}.borderwindow a {  color: #efef00;  font-family: 'Ubuntu', sans-serif;  font-size:20px;}.socwindow{  font-family: 'Ubuntu', sans-serif;  font-size:20px;  color: #f0f0f0;  max-width: 550px;  margin: auto;  border: 20px solid transparent;  padding: 25px;  border-image: url("../images/border.png") 30 round;  -webkit-border-image: url("../images/border.png") 30 round; /* Safari 3.1-5 */  -o-border-image: url("../images/border.png") 30 round; /* Opera 11-12.1 */    text-align: center;}
+
+.socicon{  width:64px;  padding:15px;}/* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -45,7 +48,7 @@
 .sidenav a:hover, .offcanvas a:focus{
 font-size: 35px;
   font-weight: bold;
-    color: #ffffff;
+    color: #00ff00
 }
 .sidenav img {
     padding: 8px 8px 8px 32px;
@@ -93,6 +96,7 @@ font-size: 35px;
 
 .arrow {
   cursor:pointer;
+  width: 50px;
   margin-left: -5px;
   z-index: 4;
   transition: 0.25s;
@@ -100,8 +104,7 @@ font-size: 35px;
 }
 
 .arrow:hover {
-
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 .navsprite {
