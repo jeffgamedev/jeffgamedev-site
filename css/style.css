@@ -36,9 +36,9 @@
 .sidenav a {
     font-family: 'Cinzel', sans-serif;
     white-space: nowrap;
-    padding: 8px 8px 8px 32px;
+    padding: 2px 2px 2px 2px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #f0f0f0;
     display: block;
     transition: 0.3s
@@ -46,9 +46,9 @@
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{
-font-size: 35px;
+font-size: 24px;
   font-weight: bold;
-    color: #00ff00
+    color: #ffC513;
 }
 .sidenav img {
     padding: 8px 8px 8px 32px;
@@ -70,8 +70,8 @@ font-size: 35px;
 .txt {
     cursor:pointer;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 25px;
-    padding: 8px 8px 8px 32px;
+    font-size: 24px;
+    padding: 8px 8px 8px 8px;
     color: #ffffff;
     white-space: nowrap;
     transition: 0.25s

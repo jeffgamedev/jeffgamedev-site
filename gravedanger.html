@@ -24,23 +24,6 @@
 <meta name="twitter:image" content="http://i.imgur.com/k6yLlbv.jpg" />
 	<!-meta end->
 	<link rel="stylesheet" type="text/css" href="css/style.css?1">
-	<script src="js/site.js"></script>
-	<script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
-
-  return t;
-}(document, "script", "twitter-wjs"));</script>
 	<link rel="shortcut icon" href="ico/favicon.ico">
 	<link rel="icon" sizes="16x16 32x32 64x64" href="ico/favicon.ico">
 	<link rel="icon" type="image/png" sizes="196x196" href="ico/favicon-192.png">
@@ -62,32 +45,43 @@
 	<meta name="msapplication-TileImage" content="ico/favicon-144.png">
 	<meta name="msapplication-config" content="ico/browserconfig.xml">
 </head>
+<script src="js/site.js"></script>
 <body>
-	<div id="locator" class="locator"><img src="images/tutorialglove.png"></div>
+
+<div id="locator" class="locator"><img src="images/tutorialglove.png"></div>
 		<!--main start-->
 		<div id="main">
 		<span class="arrow" onclick="ArrowPressed()"><img id="arrow" class="arrow" src="images/arrow.png"></span>
-		<div class="maintext">www.JeffGameDev.com<br>Home Page</div>
-			<div class="borderwindow"><p>Welcome to my homepage!<br><br>Here you can <a href="aboutme.html">find out more about me</a>, the video games I develop, and keep up with random stuff I post.
-			<div style="display:inline">
-			Use the <a href="#" onclick="ArrowPressed()">Navbar</a> on the left to explore the site!
-		</div>
-			</p>
-			</div>
-			<br>
-			<div class="socwindow">
-<a class="twitter-timeline" data-width="550" data-height="600" data-theme="dark" href="https://twitter.com/jeffgamedev">Tweets by jeffgamedev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
-			<br>
-			<div class="socwindow">
-				<a href="https://www.twitter.com/jeffgamedev"><img class="socicon" src="images/twitter.png"></a>
-				<a href="https://www.linkedin.com/in/jeffbrooksgamedev/"><img class="socicon" src="images/In-2C-66px-R.png"></a>
-				<a href="https://github.com/jeffol"><img class="socicon" src="images/GitHub-Mark-64px.png"></a>
-			</div>
-		</div>
-		<!-- start social network footer -->
+		<div class="maintext">www.JeffGameDev.com<br>Grave Danger</div>
+			<div class="borderwindow">
+				<a href="http://www.gravedangergame.com"><img class="mainimg_small" src="images/gd-splash1.png"></a>
+				<br>In 2016 I produced Grave Danger through JB Gaming Inc with a small team.
+				The game is inspired by SNES classics such as The Lost Vikings, Mega Man X, and Castlevania.
+				It is now available on <a href="http://store.steampowered.com/app/555720">Steam</a> and will be available on Xbox One by Summer 2017.
+				<br>
+				<br>
+				<br>
+				<img class="mainimg" src="images/gd-img19.jpg">
+				<br>
+				<br>
+				My role as producer and lead developer consisted of scheduling and coordinating artists, programming all features, building the entire game in Unity3D, and launching on Steam.
+				<br>
+				<br>
+				<img class="mainimg" src="images/gd-img1.jpg">
+				<br><div style="text-align:center">
+					<a href="http://www.gravedangergame.com">www.gravedangergame.com</a></div>
 
+			</div>
+		<br>
+		<!-- start social network footer -->
+		<div class="socwindow">
+			<a href="https://www.twitter.com/jeffgamedev"><img class="socicon" src="images/twitter.png"></a>
+			<a href="https://www.linkedin.com/in/jeffbrooksgamedev/"><img class="socicon" src="images/In-2C-66px-R.png"></a>
+			<a href="https://github.com/jeffol"><img class="socicon" src="images/GitHub-Mark-64px.png"></a>
+		</div>
 		<!-- end social network footer -->
+	</div>
+</div>
 		<!--main end-->
 		<!--nav start-->
 	<div id="overlay" class="overlay" onclick="CloseNavbar()"></div>
@@ -96,10 +90,14 @@
 		<img id="navsprite" class="navsprite" src="images/chicken.png" onclick="TouchNavSprite()" onmouseover="OnMouseOver(this)">
 		<div class="txt"  onmouseover="OnMouseOver(this)" >Video Game<br>Developer</div><br>
 	  <a href="javascript:void(0)" class="closebtn" onclick="CloseNavbar()" onmouseover="OnMouseOver(this)">&times;</a>
+	  <a onmouseover="OnMouseOver(this)" href="index.html" onclick="CloseNavbar()">Home</a>
 	  <a onmouseover="OnMouseOver(this)" href="aboutme.html" onclick="CloseNavbar()">About Me!</a>
-	  <a onmouseover="OnMouseOver(this)" href="gravedanger.html" onclick="CloseNavbar()">Grave<br>Danger</a>
+		<!--a onmouseover="OnMouseOver(this)" href="#">My Games</a-->
 	  <!--a onmouseover="OnMouseOver(this)" href="#">Resume</a-->
 	</div>
 	<!--nav end-->
+</h1>
+</div>
+	<br>
 </body>
 </html>
