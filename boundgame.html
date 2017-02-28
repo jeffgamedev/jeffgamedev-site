@@ -24,23 +24,6 @@
 <meta name="twitter:image" content="http://i.imgur.com/k6yLlbv.jpg" />
 	<!-meta end->
 	<link rel="stylesheet" type="text/css" href="css/style.css?2">
-	<script src="js/site.js"></script>
-	<script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
-
-  return t;
-}(document, "script", "twitter-wjs"));</script>
 	<link rel="shortcut icon" href="ico/favicon.ico">
 	<link rel="icon" sizes="16x16 32x32 64x64" href="ico/favicon.ico">
 	<link rel="icon" type="image/png" sizes="196x196" href="ico/favicon-192.png">
@@ -62,32 +45,49 @@
 	<meta name="msapplication-TileImage" content="ico/favicon-144.png">
 	<meta name="msapplication-config" content="ico/browserconfig.xml">
 </head>
+<script src="js/site.js"></script>
 <body>
-	<div id="locator" class="locator"><img src="images/tutorialglove.png"></div>
+
+<div id="locator" class="locator"><img src="images/tutorialglove.png"></div>
 		<!--main start-->
 		<div id="main">
 		<span class="arrow" onclick="ArrowPressed()"><img id="arrow" class="arrow" src="images/arrow.png"></span>
-		<div class="maintext">www.JeffGameDev.com<br>Home Page</div>
-			<div class="borderwindow"><p>Welcome to my homepage!<br><br>Here you can <a href="aboutme.html">find out more about me</a>, the video games I develop, and keep up with random stuff I post.
-			<div style="display:inline">
-			Use the <a href="#" onclick="ArrowPressed()">Navbar</a> on the left to explore the site!
-		</div>
-			</p>
+		<div class="maintext">www.JeffGameDev.com<br>Bound Game</div>
+			<div class="borderwindow">
+				Not much is to be said about "Bound Game" as of yet. A few months ago (late 2016), I began creating an RPG inspired by Earthbound in my spare time.
+				<br><br>
+				<img class="mainimg" src="images/magacap.png">
+				<br>
+				With full knowledge that an RPG is a huge task, I've accepted that I will be working on this game well into 2018.
+				<br>
+				<br>
+				<img class="mainimg" src="images/ebound1.png">
+				<br>
+				So far, the game has a fair amount of features
+				that are complete:
+				character, party, leveling, items, npc scripting, and equipping and ability systems.
+				<br>
+				<br>
+				<img class="mainimg" src="images/ebbattle1.png">
+				<br>
+				The main characters in the game are largely based off people in my real life. The setting has a sense of modern societal humor,
+				but ventures into deeper and darker undertones such as consipiracy theories and the supernatural.
+				<br>
+				<br>
+				<img class="mainimg" src="images/callmom.gif">
+				<br>
+				The foundation is built, now to draw hundreds of sprites, tiles, maps, and dialogue!
 			</div>
-			<br>
-			<div class="socwindow">
-<a class="twitter-timeline" data-width="550" data-height="600" data-theme="dark" href="https://twitter.com/jeffgamedev">Tweets by jeffgamedev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
-			<br>
-			<div class="socwindow">
-				<a href="https://www.twitter.com/jeffgamedev"><img class="socicon" src="images/twitter.png"></a>
-				<a href="https://www.linkedin.com/in/jeffbrooksgamedev/"><img class="socicon" src="images/In-2C-66px-R.png"></a>
-				<a href="https://github.com/jeffol"><img class="socicon" src="images/GitHub-Mark-64px.png"></a>
-			</div>
-		</div>
+		<br>
 		<!-- start social network footer -->
-
+		<div class="socwindow">
+			<a href="https://www.twitter.com/jeffgamedev"><img class="socicon" src="images/twitter.png"></a>
+			<a href="https://www.linkedin.com/in/jeffbrooksgamedev/"><img class="socicon" src="images/In-2C-66px-R.png"></a>
+			<a href="https://github.com/jeffol"><img class="socicon" src="images/GitHub-Mark-64px.png"></a>
+		</div>
 		<!-- end social network footer -->
+	</div>
+</div>
 		<!--main end-->
 		<!--nav start-->
 	<div id="overlay" class="overlay" onclick="CloseNavbar()"></div>
@@ -96,13 +96,17 @@
 		<img id="navsprite" class="navsprite" src="images/chicken.png" onclick="TouchNavSprite()" onmouseover="OnMouseOver(this)">
 		<div class="txt"  onmouseover="OnMouseOver(this)" >Video Game<br>Developer</div><br>
 	  <a href="javascript:void(0)" class="closebtn" onclick="CloseNavbar()" onmouseover="OnMouseOver(this)">&times;</a>
+	  <a onmouseover="OnMouseOver(this)" href="index.html" onclick="CloseNavbar()">Home</a>
+		<br>
 	  <a onmouseover="OnMouseOver(this)" href="aboutme.html" onclick="CloseNavbar()">About Me!</a>
 		<br>
 	  <a onmouseover="OnMouseOver(this)" href="gravedanger.html" onclick="CloseNavbar()">Grave<br>Danger</a>
-		<br>
-		<a onmouseover="OnMouseOver(this)" href="boundgame.html">Bound<br>Game</a>
+		<!--a onmouseover="OnMouseOver(this)" href="#">My Games</a-->
 	  <!--a onmouseover="OnMouseOver(this)" href="#">Resume</a-->
 	</div>
 	<!--nav end-->
+</h1>
+</div>
+	<br>
 </body>
 </html>
