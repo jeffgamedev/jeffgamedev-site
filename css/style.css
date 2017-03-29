@@ -13,7 +13,7 @@
     opacity:0;
     transition: opacity 1s;
     transition: margin-left .5s;
-}body{  background-image: url("../images/128-190-g-2.jpg");}.borderwindow2 {  font-family: 'Ubuntu', sans-serif;  color: #f0f0f0;  max-width: 550px;  margin: auto;  border: 20px solid transparent;  padding: 25px;}.borderwindow {
+}body{  background-image: url("../images/purple01a.jpg");}.borderwindow2 {  font-family: 'Ubuntu', sans-serif;  color: #f0f0f0;  max-width: 550px;  margin: auto;  border: 20px solid transparent;  padding: 25px;}.borderwindow {
   font-family: 'Ubuntu', sans-serif;  font-size:20px;  color: #f0f0f0;  max-width: 580px;  margin: auto;  border: 20px solid transparent;  padding: 25px;
   border-image: url("../images/border.png") 30 round;  -webkit-border-image: url("../images/border.png") 30 round; /* Safari 3.1-5 */  -o-border-image: url("../images/border.png") 30 round; /* Opera 11-12.1 */}.mainimg {  margin: auto;  width: 80%;  display: block;}.mainimg_small{  margin: auto;  width: 40%;  display: block;}.borderwindow a {  color: #efef00;  font-family: 'Ubuntu', sans-serif;  font-size:20px;}.socwindow{  font-family: 'Ubuntu', sans-serif;  font-size:20px;  color: #f0f0f0;  max-width: 550px;  margin: auto;  border: 20px solid transparent;  padding: 15px;  border-image: url("../images/border.png") 30 round;  -webkit-border-image: url("../images/border.png") 30 round; /* Safari 3.1-5 */  -o-border-image: url("../images/border.png") 30 round; /* Opera 11-12.1 */    text-align: center;}
 
@@ -25,7 +25,7 @@
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-image: url("../images/128-190-g.jpg");
+    background-image: url("../images/128-194.jpg");
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
