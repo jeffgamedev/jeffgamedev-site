@@ -1,8 +1,8 @@
 var navSprites = ["chicken.png","sadguy.gif","craftbutton.png","monsterblob.png","anvil.png","commander.png","cappi.png"];
 var lastSpriteIndex = -1;
 var nextSpriteIndexes = [];
-var navOpen = false;
-var navSize = "250px";
+var navOpen = true;
+var navSize = "230px";
 
 function ArrowPressed()
 {
@@ -27,8 +27,8 @@ function OpenNavbar()
       document.getElementById("main").style.marginLeft = "0px";
       document.getElementById("arrow").style.opacity = "0";
     }
-    document.getElementById("overlay").style.width = "100%";
-    document.getElementById("overlay").style.opacity = "0.8";    document.getElementById("overlay").style.marginLeft = navSize;}
+    //document.getElementById("overlay").style.width = "100%";
+    //document.getElementById("overlay").style.opacity = "0.8";    //document.getElementById("overlay").style.marginLeft = navSize;}
 
 function CloseNavbar()
 {
