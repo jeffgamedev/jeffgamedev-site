@@ -57,15 +57,21 @@
 }
 
 .maintext {
-
-  text-align: center;
+	text-align: center;
     margin: auto;
-    cursor:pointer;
     font-family: 'Fjalla One', sans-serif;
     font-size: 25px;
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 32px 8px;
     color: #ffffff;
     transition: 0.25s
+}
+
+.maintext img {
+    cursor:pointer;
+    padding: 32px 8px 8px 8px;
+	width:75%;
+	max-width: 551px;
+	min-width: 250px;
 }
 
 .txt {
