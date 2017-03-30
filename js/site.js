@@ -1,7 +1,7 @@
 var navSprites = ["chicken.png","sadguy.gif","craftbutton.png","monsterblob.png","anvil.png","commander.png","cappi.png"];
 var lastSpriteIndex = -1;
 var nextSpriteIndexes = [];
-var navOpen = true;
+var navOpen = window.innerWidth >= 1200;
 var navSize = "230px";
 
 function ArrowPressed()

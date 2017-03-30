@@ -15,8 +15,7 @@
     transition: margin-left .5s;
 }body{  background-image: url("../images/purple01a.jpg");}.borderwindow2 {  font-family: 'Ubuntu', sans-serif;  color: #f0f0f0;  max-width: 550px;  margin: auto;  border: 20px solid transparent;  padding: 25px;}.borderwindow {
   font-family: 'Ubuntu', sans-serif;  font-size:20px;  color: #f0f0f0;  max-width: 580px;  margin: auto;  border: 20px solid transparent;  padding: 25px;
-  border-image: url("../images/border.png") 30 round;  -webkit-border-image: url("../images/border.png") 30 round; /* Safari 3.1-5 */  -o-border-image: url("../images/border.png") 30 round; /* Opera 11-12.1 */}.mainimg {  margin: auto;  width: 80%;  display: block;}#main {	margin-left:230px;
-}.mainimg_small{  margin: auto;  width: 40%;  display: block;}.borderwindow a {  color: #efef00;  font-family: 'Ubuntu', sans-serif;  font-size:20px;}.socwindow{  font-family: 'Ubuntu', sans-serif;  font-size:20px;  color: #f0f0f0;  max-width: 550px;  margin: auto;  border: 20px solid transparent;  padding: 15px;  border-image: url("../images/border.png") 30 round;  -webkit-border-image: url("../images/border.png") 30 round; /* Safari 3.1-5 */  -o-border-image: url("../images/border.png") 30 round; /* Opera 11-12.1 */    text-align: center;}
+  border-image: url("../images/border.png") 30 round;  -webkit-border-image: url("../images/border.png") 30 round; /* Safari 3.1-5 */  -o-border-image: url("../images/border.png") 30 round; /* Opera 11-12.1 */}.mainimg {  margin: auto;  width: 80%;  display: block;}.mainimg_small{  margin: auto;  width: 40%;  display: block;}.borderwindow a {  color: #efef00;  font-family: 'Ubuntu', sans-serif;  font-size:20px;}.socwindow{  font-family: 'Ubuntu', sans-serif;  font-size:20px;  color: #f0f0f0;  max-width: 550px;  margin: auto;  border: 20px solid transparent;  padding: 15px;  border-image: url("../images/border.png") 30 round;  -webkit-border-image: url("../images/border.png") 30 round; /* Safari 3.1-5 */  -o-border-image: url("../images/border.png") 30 round; /* Opera 11-12.1 */    text-align: center;}
 
 .socicon{  width:48px;  padding:8px;}/* The side navigation menu */
 .sidenav {
@@ -139,11 +138,20 @@
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-    transition: margin-left .5s;
+    transition: margin-left .5s;	margin-left:230px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+
+@media screen and (max-width: 1200px) {
+    .sidenav {
+        width:0px;
+		padding-top: 15px;
+	}
+    .sidenav a {
+		font-size: 18px;
+		}
+
+	#main {
+		margin-left:0px;
+	}
 }
