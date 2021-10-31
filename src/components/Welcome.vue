@@ -2,9 +2,10 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
+      Welcome to my homepage! I'm Jeff Brooks a.k.a. Jeffgamdev.
+      <br>
+      Here you can find information about my life, career, and hobbies!
+      <!-- <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>. -->
     </p>
     <h3>Installed CLI Plugins</h3>
     <ul>
@@ -32,7 +33,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Welcome',
   props: {
     msg: String
   }
