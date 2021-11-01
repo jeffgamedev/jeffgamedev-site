@@ -4,8 +4,6 @@
     <img ref="face" @click="clickface" class="jeffimg" alt="Jeffgamdev" src="../assets/jeffcirc.png">
     <br>
     <img class="jefflogo" alt="Jeffgamdev Logo" src="../assets/jeffgamedevlogo02.png">
-    <!-- <Welcome msg="Game Developer & Software Engineer"/> -->
-      <div class="hello">
         <h1>Game Developer & Software Engineer</h1>
         <p>
           Welcome to my homepage! I'm Jeff Brooks a.k.a. Jeffgamdev.
@@ -27,17 +25,11 @@
           <li><a href="http://www.lorestrome.com/" target="_blank" rel="noopener">Lorestrome</a></li>
         </ul>
       </div>
-  </div>
 </template>
 
 <script>
-// import Welcome from '../components/Welcome.vue'
-
 export default {
   name: 'Home',
-  components: {
-    // Welcome
-  },
   methods: {
       clickface: function(evt) {
           console.log(evt);
