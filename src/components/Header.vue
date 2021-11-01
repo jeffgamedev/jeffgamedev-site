@@ -1,20 +1,16 @@
 <template>
   <div id="header" class="nav">
-      <a href="#">Home</a>
-      <a href="#">Arcade</a>
-      <a href="#">Resume</a>
-      <a href="#">Contact</a>
+      <router-link to="/">Home</router-link>
+      <router-link to="/arcade">Arcade</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link to="/resume">Resume</router-link>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Header',
-  methods: {
-      clickface: function(evt) {
-          console.log(evt);
-      }
-  }
+  methods: {}
 }
 </script>
 
