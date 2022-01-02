@@ -12,7 +12,7 @@
 			Out of high school I studied graphic design at community college, and then Computer Science at University.
             <br>
             <br>
-            Since 2012, I've worked with a variety of companies, publishing games for mobile, PC, consoles. These days, I mostly enjoy using C#, Godot, and Unity.
+            Since 2012, I've worked with a variety of companies, publishing games for mobile, PC, and consoles. These days, I mostly enjoy using C#, Godot, and Unity.
 			<br>
             </div>
   </div>
