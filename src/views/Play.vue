@@ -10,7 +10,8 @@
       <b-row>
           <b-col><b-card><b-button @click="setOnion">Grand Onion</b-button></b-card></b-col>
           <b-col><b-card><b-button @click="setWeasel"> Star Weasel</b-button></b-card></b-col>
-          <b-col><b-card><b-button @click="setBoxfort">Boxfort</b-button></b-card></b-col>
+          <b-col><b-card><b-button @click="setThunder">Thunder Chicken</b-button></b-card></b-col>
+          <!-- <b-col><b-card><b-button @click="setBoxfort">Boxfort</b-button></b-card></b-col> -->
       </b-row>
       <br>
       <b-row>
@@ -19,12 +20,13 @@
           <b-col><b-card><b-button @click="setDemo">Demo Project</b-button></b-card></b-col>
       </b-row>
       <br>
-          <iframe v-if="game=='onion'" src="http://onion.jeffgamedev.com.s3-website-us-east-1.amazonaws.com/" width="512px" height="480px" allow="fullscreen" frameborder="0"></iframe>
-          <iframe v-else-if="game=='pong'" src="http://pong.jeffgamedev.com.s3-website-us-east-1.amazonaws.com/" width="1024px" height="720px" allow="fullscreen" frameborder="0"></iframe>
-          <iframe v-else-if="game=='boxfort'" src="http://boxfort.jeffgamedev.com.s3-website.us-east-2.amazonaws.com/" width="1024px" height="600px" allow="fullscreen" frameborder="0"></iframe>
-          <iframe v-else-if="game=='weasel'" src="http://starweasel.s3-website-us-east-1.amazonaws.com/" width="320px" height="640px" allow="fullscreen" frameborder="0"></iframe>
-          <iframe v-else-if="game=='demo'" src="http://demo.jeffgamedev.com.s3-website-us-east-1.amazonaws.com/" width="1024px" height="720px" allow="fullscreen" frameborder="0"></iframe>
-          <iframe v-else-if="game=='cardbattle'" src="http://cardbattle.jeffgamedev.com.s3-website-us-east-1.amazonaws.com/" width="1024px" height="720px" allow="fullscreen" frameborder="0"></iframe>
+          <iframe v-if="game=='onion'" src="https://jeffgamedev.com/play/onion/onion.html" width="512px" height="480px" allow="fullscreen" frameborder="0"></iframe>
+          <iframe v-else-if="game=='pong'" src="https://jeffgamedev.com/play/pong/index.html" width="1024px" height="720px" allow="fullscreen" frameborder="0"></iframe>
+          <iframe v-else-if="game=='thunder'" src="https://jeffgamedev.com/play/thunder/index.html" width="1024px" height="720px" allow="fullscreen" frameborder="0"></iframe>
+          <!-- <iframe v-else-if="game=='boxfort'" src="https://jeffgamedev.com/play/boxfort/index.html" width="1024px" height="600px" allow="fullscreen" frameborder="0"></iframe> -->
+          <iframe v-else-if="game=='weasel'" src="https://jeffgamedev.com/play/weasel/starweasel.html" width="320px" height="640px" allow="fullscreen" frameborder="0"></iframe>
+          <iframe v-else-if="game=='demo'" src="https://jeffgamedev.com/play/vb/index.html" width="1024px" height="720px" allow="fullscreen" frameborder="0"></iframe>
+          <iframe v-else-if="game=='cardbattle'" src="https://jeffgamedev.com/play/cards/index.html" width="1024px" height="720px" allow="fullscreen" frameborder="0"></iframe>
       </b-container>
       <br>
   </div>
@@ -40,6 +42,9 @@ export default {
       },
       setPong: function() {
           this.game = "pong";
+      },
+      setThunder: function() {
+          this.game = "thunder";
       },
       setBoxfort: function() {
           this.game = "boxfort";
