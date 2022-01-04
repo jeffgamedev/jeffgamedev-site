@@ -19,7 +19,7 @@
           <b-col><b-card><b-button @click="setDemo">Demo Project</b-button></b-card></b-col>
       </b-row>
       <br>
-          <iframe v-if="game=='onion'" src="http://onion.jeffgamedev.com.s3-website-us-east-1.amazonaws.com/" width="640px" height="640px" allow="fullscreen" frameborder="0"></iframe>
+          <iframe v-if="game=='onion'" src="http://onion.jeffgamedev.com.s3-website-us-east-1.amazonaws.com/" width="512px" height="480px" allow="fullscreen" frameborder="0"></iframe>
           <iframe v-else-if="game=='pong'" src="http://pong.jeffgamedev.com.s3-website-us-east-1.amazonaws.com/" width="1024px" height="720px" allow="fullscreen" frameborder="0"></iframe>
           <iframe v-else-if="game=='boxfort'" src="http://boxfort.jeffgamedev.com.s3-website.us-east-2.amazonaws.com/" width="1024px" height="600px" allow="fullscreen" frameborder="0"></iframe>
           <iframe v-else-if="game=='weasel'" src="http://starweasel.s3-website-us-east-1.amazonaws.com/" width="320px" height="640px" allow="fullscreen" frameborder="0"></iframe>
