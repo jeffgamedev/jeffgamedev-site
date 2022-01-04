@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import Arcade from '../views/Arcade.vue'
+import Play from '../views/Play.vue'
 import Resume from '../views/Resume.vue'
 
 
@@ -15,9 +15,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/arcade',
-    name: 'Arcade',
-    component: Arcade
+    path: '/play',
+    name: 'Play',
+    component: Play
   },
   {
     path: '/about',
