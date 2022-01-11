@@ -26,11 +26,11 @@ export default {
 .nav a {
     float: left;
     color: #f2f2f2f2;
-    padding: 8px 24px;
+    padding: 8px 20px;
     text-align: center;
     font-size: 17px;
     text-decoration: none;
-    margin-right: 5px;
+    margin-right: 4px;
     font-family: 'Mansalva', cursive;
 }
 .nav a:hover {
