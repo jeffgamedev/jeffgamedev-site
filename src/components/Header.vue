@@ -16,8 +16,9 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 </style>
+
 <style>
 .nav {
     background-color: #333;
@@ -26,12 +27,12 @@ export default {
 .nav a {
     float: left;
     color: #f2f2f2f2;
-    padding: 8px 20px;
+    padding: 8px 16px;
     text-align: center;
-    font-size: 17px;
-    text-decoration: none;
+    font-size: 14px;
+    text-decoration: none !important;
     margin-right: 4px;
-    font-family: 'Mansalva', cursive;
+    font-family: 'Source Code Pro', monospace;
 }
 .nav a:hover {
     background: #ddd;
