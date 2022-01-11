@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Home from '../views/Home.vue'
+import Nfts from '../views/Nfts.vue'
 import About from '../views/About.vue'
 import Play from '../views/Play.vue'
 import Resume from '../views/Resume.vue'
@@ -13,6 +14,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/nfts',
+    name: 'Nfts',
+    component: Nfts
   },
   {
     path: '/play',

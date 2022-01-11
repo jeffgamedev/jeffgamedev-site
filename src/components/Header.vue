@@ -3,6 +3,7 @@
       <router-link to="/">Home</router-link>
       <router-link to="/play">Play</router-link>
       <router-link to="/about">About</router-link>
+      <!-- <router-link to="/nfts">NFTs</router-link> -->
       <router-link to="/resume">Resume</router-link>
   </div>
 </template>
