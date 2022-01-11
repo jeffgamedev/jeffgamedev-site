@@ -3,7 +3,7 @@
       <b-container>
       <br>
           Here is some information about my career in game development.
-          <br>
+      <br>
           Click the game title to expand the view. <b-icon icon="caret-down"></b-icon>
       <br>
       </b-container>
@@ -16,7 +16,7 @@
           <b-collapse id="accordion-0" visible accordion="my-accordion" role="tabpanel">
             <b-card-body>
               <!-- <b-card-text>{{ text }}</b-card-text> -->
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/X1TtvAKe2p8" title="Circadian Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="vid" src="https://www.youtube.com/embed/X1TtvAKe2p8" title="Circadian Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <b-card-text>
               <br><b>Circadian</b> is currently in development,
               <br>with contributions from <a href="https://twitter.com/iamShaneMesa">Shane Mesa</a> and <a href="https://twitter.com/lumpytouch">Lumpy.</a>
@@ -34,7 +34,7 @@
           </b-card-header>
           <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
             <b-card-body>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/qG-anRqbQnI" title="Grave Danger Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="vid" src="https://www.youtube.com/embed/qG-anRqbQnI" title="Grave Danger Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <b-card-text><b>Grave Danger</b> is a fun and challenging platform puzzle game inspired by The Lost Vikings.
               <br>The game can be played single player or co-op.
                 </b-card-text>
@@ -51,7 +51,7 @@
           </b-card-header>
           <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
             <b-card-body>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rfAyqVJrli4" title="Battle Bears Gold Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="vid" src="https://www.youtube.com/embed/rfAyqVJrli4" title="Battle Bears Gold Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <b-card-text>At SkyVu Entertainment, I was a lead client engineer on the <b>Battle Bears</b> mobile series. This was my first professional gig, and helped me grow tremendously as a game developer and engineer.</b-card-text>
               <!-- <b-card-text>{{ text }}</b-card-text> -->
             </b-card-body>
@@ -64,7 +64,7 @@
           </b-card-header>
           <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
             <b-card-body>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/vWkyIGFtlHI" title="Beast Bound Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="vid" src="https://www.youtube.com/embed/vWkyIGFtlHI" title="Beast Bound Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <b-card-text><b>Beast Bound</b> is a mobile-friendly RPG inspired by Super Mario RPG. I was the producer and programmer. The game is no longer available, but I am currently working on a re-release.</b-card-text>
             </b-card-body>
           </b-collapse>
@@ -76,7 +76,7 @@
           </b-card-header>
           <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
             <b-card-body>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9c1ugAGaoM4" title="Udder Panic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="vid" src="https://www.youtube.com/embed/9c1ugAGaoM4" title="Udder Panic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <b-card-text><b>Udder Panic</b> is a high-speed UFO cow abduction game for mobile. I was the producer and programmer, and partnered with Make-a-Wish Nebraska to help promote its release. The game is no longer available, but I am currently working on a re-release.</b-card-text>
             </b-card-body>
           </b-collapse>
@@ -88,7 +88,7 @@
           </b-card-header>
           <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
             <b-card-body>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/1BaOHG1aeEo" title="Sovranti" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="vid" src="https://www.youtube.com/embed/1BaOHG1aeEo" title="Sovranti" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <b-card-text><b>Sovranti</b> is an online board game platform. I helped build some of the network services, internal tools, and Unity client features.<br>I did a lot of really dev-ops-y stuff there, too.</b-card-text>
             </b-card-body>
           </b-collapse>
@@ -108,3 +108,12 @@ export default {
   methods: {}
 }
 </script>
+
+<style scoped>
+.vid
+{
+    width: 90%;
+    max-width: 560px;
+    aspect-ratio: 16/9;
+}
+</style>
