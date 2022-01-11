@@ -8,16 +8,16 @@
       <br>
       <br>
       <b-row>
-          <b-col><b-card><b-button @click="setOnion">Grand Onion</b-button></b-card></b-col>
-          <b-col><b-card><b-button @click="setWeasel"> Star Weasel</b-button></b-card></b-col>
-          <b-col><b-card><b-button @click="setThunder">Thunder Chicken</b-button></b-card></b-col>
+          <b-col><b-button @click="setOnion">Grand Onion</b-button></b-col>
+          <b-col><b-button @click="setWeasel"> Star Weasel</b-button></b-col>
+          <b-col><b-button @click="setThunder">Thunder Chicken</b-button></b-col>
           <!-- <b-col><b-card><b-button @click="setBoxfort">Boxfort</b-button></b-card></b-col> -->
       </b-row>
       <br>
       <b-row>
-          <b-col><b-card><b-button @click="setPong"> Tennis Pong</b-button></b-card></b-col>
-          <b-col><b-card><b-button @click="setCardBattle">Card Battle</b-button></b-card></b-col>
-          <b-col><b-card><b-button @click="setDemo">Demo Project</b-button></b-card></b-col>
+          <b-col><b-button @click="setPong"> Tennis Pong</b-button></b-col>
+          <b-col><b-button @click="setCardBattle">Card Battle</b-button></b-col>
+          <b-col><b-button @click="setDemo">Demo Project</b-button></b-col>
       </b-row>
       <br>
           <iframe v-if="game=='onion'" src="https://jeffgamedev.com/play/onion/onion.html" width="512px" height="480px" allow="fullscreen" frameborder="0"></iframe>
