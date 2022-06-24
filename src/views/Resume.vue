@@ -34,12 +34,12 @@
           </b-card-header>
           <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
             <b-card-body>
-              <iframe class="vid" src="https://www.youtube.com/embed/qG-anRqbQnI" title="Grave Danger Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="vid" src="https://www.youtube.com/embed/32q8WKSYU34" title="Grave Danger Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <b-card-text><b>Grave Danger</b> is a fun and challenging platform puzzle game inspired by The Lost Vikings.
               <br>The game can be played single player or co-op.
                 </b-card-text>
                 <b-card-text>I was the writer, director, producer, and programmer on Grave Danger.
-                    <br>The game is currently available on Steam, Playstation 4, and Nintendo Switch.<br>
+                    <br>Want to support me? Please consider <a href="https://store.steampowered.com/app/555720/Grave_Danger/">purchasing the game on Steam!</a><br>
                 </b-card-text>
             </b-card-body>
           </b-collapse>
