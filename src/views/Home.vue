@@ -1,12 +1,12 @@
 <template>
   <div id="home">
     <br>
-    <img ref="face" @click="clickface" class="jeffimg" alt="Jeffgamdev" src="../assets/jeffcirc.png">
+    <img ref="face" @click="clickface" class="jeffimg" alt="Jeffgamedev" src="../assets/jeffcirc.png">
     <br>
-    <img class="jefflogo" alt="Jeffgamdev Logo" src="../assets/jeffgamedevlogo02.png">
+    <img class="jefflogo" alt="Jeffgamedev Logo" src="../assets/jeffgamedevlogo02.png">
         <h1>Game Developer & Software Engineer</h1>
         <p>
-          Welcome to my homepage! I'm Jeff Brooks a.k.a. Jeffgamdev.
+          Welcome to my homepage! I'm Jeff Brooks a.k.a. Jeffgamedev.
           <br>
           Here you can find information about my life, career, and hobbies.
         </p>
